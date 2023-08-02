@@ -30,7 +30,7 @@ const UserSchema = new mongoose.Schema(
         default: "",
     },
     friends: {
-        type: String,
+        type: Array,
         default: [],
     },
     location: String,
@@ -42,4 +42,5 @@ const UserSchema = new mongoose.Schema(
 );
 
 const User = mongoose.model("User", UserSchema);
+
 export default User;
